@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Desafio 01</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-links">
+                <a href="">Codelândia</a>
+                <a href="">Blog</a>
+            </div>
+            <div class="header-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Pesquisar no blog">
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-container">
+
+            <div class="main-post-card">
+                <div class="card-header">
+                    <span>02 de jul, 2021</span>
+                    <i class="far fa-heart" onclick="changeLikeHeart(0)"></i>
+                </div>
+                <div class="card-title">
+                    <h2>Agora é oficial: o Windows 11 está vindo</h2>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique nulla magni adipisci aliquam dolores dolor error placeat rem quod aut aliquid ea iusto, ex laboriosam ad reprehenderit possimus enim!</p>
+                </div>
+            </div>
+
+            <div class="main-post-card">
+                <div class="card-header">
+                    <span>02 de jul, 2021</span>
+                    <i class="far fa-heart" onclick="changeLikeHeart(1)"></i>
+                </div>
+                <div class="card-title">
+                    <h2>Guitarra mais cara do mundo é absurda</h2>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique nulla magni adipisci aliquam dolores dolor error placeat rem quod aut aliquid ea iusto, ex laboriosam ad reprehenderit possimus enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur nam eveniet ratione autem tempora aliquid voluptatibus sequi? Pariatur perspiciatis dolorum unde, voluptatem aut illum accusantium quo repudiandae ut perferendis.</p>
+                </div>
+            </div>
+
+            <div class="main-post-card">
+                <div class="card-header">
+                    <span>02 de jul, 2021</span>
+                    <i class="far fa-heart" onclick="changeLikeHeart(2)"></i>
+                </div>
+                <div class="card-title">
+                    <h2>Gênio cria vacina da COVID-19 (Coronavac) utilizando apenas JavaScript e maizena</h2>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem similique asperiores repellat cumque maiores veniam ducimus fugit, dolorem, magnam illo officia quae atque rerum natus eaque aliquid illum officiis facere!</p>
+                </div>
+            </div>
+            
+            <div class="main-post-card">
+                <div class="card-header">
+                    <span>02 de jul, 2021</span>
+                    <i class="far fa-heart" onclick="changeLikeHeart(3)"></i>
+                </div>
+                <div class="card-title">
+                    <h2>Cientistas confirmam: o bola é kek</h2>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci molestias delectus asperiores ipsa odit, sed, rerum impedit laudantium ducimus ipsam quae ad cumque doloremque? Non et at laboriosam possimus aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam consectetur ullam consequatur suscipit reiciendis! Blanditiis, quos voluptatibus earum explicabo possimus enim magnam maiores in harum, nulla laboriosam sunt hic quisquam.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <script src="./scripts/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 1000,
+            reset: false
+        });
+
+        ScrollReveal().reveal('.main-post-card', { delay: 100 });
+        ScrollReveal().reveal('.card-header', { delay: 200 });
+        ScrollReveal().reveal('.card-title', { delay: 250 });
+        ScrollReveal().reveal('.card-content', { delay: 300 });
+    </script>
+</body>
+</html>

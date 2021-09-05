@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  background: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+  width: 100%;
+}
+.header-container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media (max-width: 425px) {
+  .header-container {
+    width: 90%;
+  }
+}
+.header-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-links a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.header-search {
+  display: flex;
+  align-items: center;
+}
+.header-search .fa-search {
+  position: absolute;
+  margin-left: 1rem;
+  color: #fff;
+}
+.header-search input {
+  width: 100%;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fff;
+}
+.header-search input:focus {
+  outline: none;
+}
+.header-search input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main {
+  background: #f3f5f7;
+  display: flex;
+}
+.main-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 5rem auto;
+}
+@media (max-width: 425px) {
+  .main-container {
+    width: 90%;
+    margin: 3rem auto;
+  }
+}
+.main-post-card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.main-post-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-post-card .card-header span {
+  font-size: 0.8rem;
+  color: #B6B6B6;
+}
+.main-post-card .card-header .fa-heart {
+  color: #574AE8;
+}
+.main-post-card .card-header button {
+  background: transparent;
+  border: none;
+}
+.main-post-card .card-title {
+  margin-top: 0.5rem;
+}
+.main-post-card .card-title h2 {
+  color: #313131;
+  font-weight: normal;
+  font-family: "Lexend Deca", sans-serif;
+}
+.main-post-card .card-content {
+  color: #B6B6B6;
+}
+
+/*# sourceMappingURL=styles.css.map */
